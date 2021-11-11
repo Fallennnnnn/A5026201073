@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Flexbox Ega:)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+  h1 {
+    color: rgba(255, 255, 255, 0.986);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h2 {
+    color: rgba(255, 255, 255, 0.986);
+    text-align: center;
+    font-size: larger;
+
+
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(238, 248, 248);
+  }
+
+  body {
+    background-image: url("https://wallpapercave.com/wp/wp9550688.jpg");
+    background-size: cover;
+
+  }
+
+  .mons {
+    display: inline-block;
+    font-size: 50px;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    background: url("https://wallpapercave.com/wp/wp8334648.jpg") center no-repeat;
+    transition: all 0.3s 0s ease-out;
+
+  }
+  .mons:hover{
+    border: #fff solid 4px;
+    transition: all 0.3s 0s ease-in;
+    transform: scale(1.1);
+    background:url("https://upload-os-bbs.mihoyo.com/upload/2021/01/29/15713757/f61ddae5a7a2cd0a73f718591d1c2b3c_4969758346078403293.png?x-oss-process=image/resize,s_740/quality,q_80/auto-orient,0/interlace,1/format,png") center no-repeat;
+    
+  }
+  .inz:hover {
+    border: #fff solid 4px;
+    transition: all 0.3s 0s ease-in;
+    transform: scale(1.1);
+    background: url("https://i.im.ge/2021/09/21/TtBS8Y.png") center no-repeat;
+  }
+.lye:hover {
+  border: #fff solid 4px;
+    transition: all 0.3s 0s ease-in;
+    transform: scale(1.1);
+    background: url("https://i.im.ge/2021/09/21/TtBqQD.png") center no-repeat;
+}
+
+  .inz {
+    display: inline-block;
+    font-size: 50px;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    background: url("https://wallpapercave.com/wp/wp9550724.jpg") center no-repeat;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s 0s ease-out;
+  }
+
+  .lye {
+    display: inline-block;
+    font-size: 50px;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    background: url("https://wallpapercave.com/wp/wp8657152.jpg") center no-repeat;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s 0s ease-out;
+  }
+
+  p {
+    border: 2px;
+    background: rgb(37, 34, 34);
+  }
+
+  .chara:hover {
+    transition: all 0.3s ease-in;
+    transform: scale(1.1);
+    
+  }
+  .chara {
+    transition: all 0.3s 0s ease-out;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Navigation Bar</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Monstadt</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Inazuma</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Liyue</a>
+        </li>
+      </ul>
+    </div>
+    <!-- form -->
+    <form class="form-inline" action="">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-success" type="submit">Search</button>
+    </form>
+  </nav>
+  <!-- carousel -->
+  <h1>Genshin Impact Characters</h1>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <!-- Flexbox Satuu-->
+        <div class="container satu mt-2">
+          <h2 class="mons">Monstadt</h2>
+          <div class=" d-flex flex-wrap justify-content-around">
+            <div class="chara p-2 m-2 order-1"><img
+                src="https://genshindb.org/wp-content/uploads/2021/01/Character-Diluc-.png">
+              <p><b>Diluc</b></p>
+            </div>
+            <div class="chara p-2 m-2 order-3"><img class="img-fluid"
+                src="https://genshindb.org/wp-content/uploads/2021/01/Character-Jean-.png">
+              <p><b>Jean</b></p>
+            </div>
+            <div class="chara p-2 m-2  order-4"><img
+                src="https://genshindb.org/wp-content/uploads/2021/01/Character-Klee-.png">
+              <p><b>Klee</b></p>
+            </div>
+            <div class="chara p-2 m-2 order-2"><img
+                src="https://genshindb.org/wp-content/uploads/2021/01/Character-Venti-.png">
+              <p><b>Venti</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--flexbox dua dan carousel kedua-->
+      <div class="carousel-item">
+        <div class="container dua mt-2">
+          <h2 class="inz">Inazuma</h2>
+          <div class="d-flex flex-wrap justify-content-around">
+            <div class="chara p-2 m-2 order-2"><img
+                src="https://genshindb.org/wp-content/uploads/2021/02/Character_Ayaka.png">
+              <p><b>Kamisato Ayaka</b></p>
+            </div>
+            <div class="chara p-2 m-2 order-4"><img
+                src="https://genshindb.org/wp-content/uploads/2021/09/Characters-Kujou-Sara.png">
+              <p><b>Kujou Sara</b></p>
+            </div>
+            <div class="chara p-2 align-self-center m-2 order-1"><img
+                src="https://genshindb.org/wp-content/uploads/2021/09/Characters-Raiden-Shogun.png">
+              <p><b>Raiden Shogun</b></p>
+            </div>
+            <div class="chara p-2 m-2 order-3"><img
+                src="https://genshindb.org/wp-content/uploads/2021/04/Kaedehara-Kazuha.png">
+              <p><b>Kaedehara Kazuha</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Flexbox Ketigaa-->
+        <div class="container tiga mt-2">
+          <h2 class="lye">Liyue</h2>
+          <div class="d-flex flex-wrap justify-content-around">
+            <div class="chara p-2 m-2 "><img
+                src="https://genshindb.org/wp-content/uploads/2021/01/Character-Zhongli-.png">
+              <p><b>Zhongli</b></p>
+            </div>
+            <div class="chara p-2 m-2 "><img src="https://genshindb.org/wp-content/uploads/2021/01/Xiao.png">
+              <p><b>Xiao</b></p>
+            </div>
+            <div class="chara p-2 align-self-center m-2"><img
+                src="https://genshindb.org/wp-content/uploads/2021/01/Character-Keqing-.png">
+              <p><b>Keqing</b></p>
+            </div>
+            <div class="chara p-2 m-2 "><img
+                src="https://genshindb.org/wp-content/uploads/2021/01/Character-Ningguang-.png">
+              <p><b>Ningguang</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+
+
+
+
+
+
+  ​
+</body>
+
+</html>
+​
