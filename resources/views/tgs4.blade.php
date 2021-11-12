@@ -12,21 +12,22 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <script>
-    function smallestnumm(num1,num2,num3) {
+    function smallestnumm() {
         var num1 = document.getElementById("num1").value;
         var num2 = document.getElementById("num2").value;
         var num3 = document.getElementById("num3").value;
 
-        if (num1 < num2) {
-            smallest = num1;
+        if (num1 <= num2) {
+            if ( num1 <= num3)
+                smallest = num1;
+            else
+                smallest = num3;
         } else {
+            if ( num2 <= num3)
             smallest = num2;
-            if (num3 < smallest) {
-
-             smallest = num3;
+            else
+            smallest = num3;
         }
-
-    }
     return smallest;
 }
         function printres() {
