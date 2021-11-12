@@ -22,6 +22,10 @@ Route::get('praktikum2', function () {
 Route::get('tugas4', function () {
     return view('tgs4');
 });
-Route::get('isiannama',"ViewController@showForm") ;
-Route::post('greetings',"ViewController@resultGreetings");
+//tugas PHP
+Route::get('smallnumfinder',"ViewController@showForm");
+Route::post('smallnumres',"ViewController@smallnumRes");
+// ETS
+Route::get('formets', "viewController@etsForm");
+
 
