@@ -28,4 +28,7 @@ Route::post('smallnumres',"ViewController@smallnumRes");
 // ETS
 Route::get('formets', "viewController@etsForm");
 
-
+//route CRUD
+Route::get('/pegawai',"PegawaiController@index");
+Route::get('/pegawai/tambah','PegawaiController@tambah');
+Route::post('/pegawai/store','PegawaiController@store');
