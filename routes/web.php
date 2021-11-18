@@ -30,5 +30,13 @@ Route::get('formets', "viewController@etsForm");
 
 //route CRUD
 Route::get('/pegawai',"PegawaiController@index");
+//tambah pegawai
 Route::get('/pegawai/tambah','PegawaiController@tambah');
+//setor pegawai
 Route::post('/pegawai/store','PegawaiController@store');
+//edit pegawai
+Route::get('/pegawai/edit/{id}','PegawaiController@edit');
+//update pegawai
+Route::post('/pegawai/update','PegawaiController@update');
+//hapus pegawai
+Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
