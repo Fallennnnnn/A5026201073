@@ -40,3 +40,16 @@ Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
 //hapus pegawai
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+
+//route CRUD TUGAS Tabel Pendapatan
+Route::get('/pendapatan',"PendapatanController@index");
+//tambah data pendapatan
+Route::get('/pendapatan/tambah','PendapatanController@tambah');
+//setor data pendapatan
+Route::post('/pendapatan/store','PendapatanController@store');
+//edit data pendapatan
+Route::get('/pendapatan/edit/{id}','PendapatanController@edit');
+//update data pendapatan
+Route::post('/pendapatan/update','PendapatanController@update');
+//hapus data pendapatan
+Route::get('/pendapatan/hapus/{id}','PendapatanController@hapus');
