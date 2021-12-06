@@ -1,26 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>CRUD Tabel Absen</title>
-</head>
-<body>
+@extends('layout.bahagia')
+@section('title','Data Absen Pegawai')
+@section('konten')
 
-	<h2>Daftar Absensi Pegawai</h2>
+@section('judulhalaman', 'Daftar Absensi Pegawai')
 
 
-	<a href="/absen/add"> + Tambah Absensi</a>
+	<a href="/absen/add" class = "btn btn-primary"> Tambah Absensi</a>
 
 	<br/>
 	<br/>
 
-	<table border="1">
-		<tr>
-
+	<table border="2" class = "table table-hover">
+        <thead class = "thead-dark">
+        <tr>
 			<th>IDPegawai</th>
 			<th>Tanggal</th>
 			<th>Status</th>
 			<th>Opsi</th>
 		</tr>
+    </thead>
 		@foreach($absen as $a)
 		<tr>
 
@@ -42,5 +40,4 @@
         A : Alpha <br>
         </p>
 
-</body>
-</html>
+@endsection
