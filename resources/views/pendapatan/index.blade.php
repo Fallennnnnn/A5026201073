@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tugas PWEB Query Builder</title>
-</head>
+@extends('layout.bahagia')
+
+@section('title', 'Data Pendapatan Pegawai')
+@section('judulhalaman', 'Data Pendapatan Pegawai')
+
+@section('konten')
 <body>
 
-	<h2>Tugas Query Builder Pemrograman Web 25 November 2021</h2>
-	<h3>Ega Fernanda Putra 5026201073</h3>
-    <h3>Data Pendapatan</h3>
-
-	<a href="/pendapatan/tambah"> + Tambah Data Baru</a>
+	<a href="/pendapatan/tambah" class = "btn btn-primary"> Tambah Data Baru</a>
 
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table border="2" class = "table table-hover">
 		<tr>
 			<th>ID</th>
 			<th>IDPegawai</th>
@@ -44,3 +41,4 @@
 
 </body>
 </html>
+@endsection
