@@ -94,6 +94,7 @@
                     <a href="praktikum2">Praktikum 2</a>
                     <a href="formets">ETS</a>
                     <a href="smallnumfinder">Tugas PHP</a>
+                    <a href="/pegawai">CRUD Pegawai</a>
                 </div>
             </div>
         </div>
