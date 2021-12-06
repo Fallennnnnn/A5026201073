@@ -17,14 +17,79 @@
     </script>
 
 </head>
+<style>
+    .container {
+        border-style: solid border-color: black;
+    }
+
+</style>
 
 <body>
+    <div class="container">
+        <br>
+        <header class="well well-sm " style = background:#e7e4e4>
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="{{ URL::asset('/images/ega2.jpg') }}" alt="fotoega" width="100px">
+                </div>
+                <div class="col-sm-4">
+                    <br>
+                    <h1>Ega Fernanda Putra</h1>
+                </div>
+                <br>
+                <div class="col-sm-4">
+                    <h1>5026201073</h1>
+                </div>
+            </div>
+        </header>
 
-    <h3>@yield('judulhalaman')</h3>
+        <div class="row">
 
-    @section('konten')
+            <div class="col-sm-3 text-center">
+            <div class="well well-sm" style = background:#e7e4e4>
+                    <h2>Tempat Navigasi</h2>
+            </div>
+            <div class="well" style = "background: #e7e4e4">
+                    <ul class="nav flex-column">
+                        <br>
+                        <li class="nav-item">
+                            <a class="btn btn-default" href="/pegawai">Pegawai</a>
+                        </li>
+                        <br>
+                        <li class="nav-item">
+                            <a class="btn btn-default" href="/absen">Absen</a>
+                        </li>
+                        <br>
+                        <li class="nav-item">
+                            <a class="btn btn-default" href="/pendapatan">Pendapatan</a>
+                        </li>
+                        <br>
+                        <li class="nav-item">
+                            <a class="btn btn-default disabled" >Praktikum</a>
+                        </li>
 
-    @show
+                        <br>
+                    </ul>
+                </div>
+                </div>
+
+
+
+            <div class="col-sm-9" style = background-color:#f3eded>
+
+                    <h3>@yield('judulhalaman')</h3>
+
+                    @section('konten')
+
+                    @show
+                </div>
+        </div>
+        <footer class = "text-center">
+
+                        <h3>Hak Cipta Oleh 5026201073 - Ega Fernanda Putra </h3>
+            </div>
+        </footer>
+    </div>
 
 </body>
 
