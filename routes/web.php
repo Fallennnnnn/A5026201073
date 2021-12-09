@@ -11,6 +11,8 @@
 |
 */
 
+use App\Http\Controllers\PegawaiController;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -28,7 +30,7 @@ Route::post('smallnumres',"ViewController@smallnumRes");
 // ETS
 Route::get('formets', "viewController@etsForm");
 
-//route CRUD
+//route CRUD PEGAWAI
 Route::get('/pegawai',"PegawaiController@index");
 //tambah pegawai
 Route::get('/pegawai/tambah','PegawaiController@tambah');
@@ -40,6 +42,10 @@ Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
 //hapus pegawai
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+//cari pegawai
+Route::get('/pegawai/cari','PegawaiController@cari');
+//view detail pegawai
+Route::get('/pegawai/view/{id}','PegawaiController@detail');
 
 //route CRUD TUGAS Tabel Pendapatan
 Route::get('/pendapatan',"PendapatanController@index");
@@ -61,3 +67,13 @@ Route::post('/absen/store','AbsenController@store');
 Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+
+//route CRUD TUGAS PRAKTIKUM
+Route::get('/bagian','BagianController@indexbagian');
+Route::get('/bagian/add','BagianController@add');
+Route::post('/bagian/store','BagianController@store');
+Route::get('/bagian/edit/{id}','BagianController@edit');
+Route::post('/bagian/update','BagianController@update');
+Route::get('/bagian/hapus/{id}','BagianController@hapus');
+Route::get('/bagian/view/{id}','BagianController@detail');
+Route::get('/bagian/cari','BagianController@cari');

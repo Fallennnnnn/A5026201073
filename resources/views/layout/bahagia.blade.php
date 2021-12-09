@@ -65,10 +65,7 @@
                         </li>
                         <br>
                         <li class="nav-item">
-                            <a class="btn btn-default disabled" >Minggu Depan</a>
-                            <br>
-                        <li class="nav-item">
-                            <a class="btn btn-default disabled" >Praktikum</a>
+                            <a class="btn btn-default" href = "/bagian" >Praktikum</a>
                         </li>
 
                         <br>
@@ -87,9 +84,11 @@
                     @show
                 </div>
         </div>
+        <br><br>
         <footer class = "text-center">
-
+            <div class="well" style = background-color:#f3eded>
                         <h3>Hak Cipta Oleh 5026201073 - Ega Fernanda Putra </h3>
+                    </div>
             </div>
         </footer>
     </div>

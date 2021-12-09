@@ -14,7 +14,7 @@
 	<table border="2" class = "table table-hover">
 		<tr>
 			<th>ID</th>
-			<th>IDPegawai</th>
+			<th>Nama Pegawai</th>
 			<th>Bulan</th>
 			<th>Tahun</th>
 			<th>Gaji</th>
@@ -24,7 +24,7 @@
 		@foreach($pendapatan as $p)
 		<tr>
 			<td>{{ $p->ID}}</td>
-			<td>{{ $p->IDPegawai}}</td>
+			<td>{{ $p->pegawai_nama}}</td>
 			<td>{{ $p->Bulan}}</td>
 			<td>{{ $p->Tahun}}</td>
             <td>{{ $p->Gaji}}</td>
