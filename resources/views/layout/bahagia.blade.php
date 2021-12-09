@@ -65,6 +65,9 @@
                         </li>
                         <br>
                         <li class="nav-item">
+                            <a class="btn btn-default disabled" >Minggu Depan</a>
+                            <br>
+                        <li class="nav-item">
                             <a class="btn btn-default disabled" >Praktikum</a>
                         </li>
 
