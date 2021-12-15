@@ -77,3 +77,9 @@ Route::post('/bagian/update','BagianController@update');
 Route::get('/bagian/hapus/{id}','BagianController@hapus');
 Route::get('/bagian/view/{id}','BagianController@detail');
 Route::get('/bagian/cari','BagianController@cari');
+
+//UAS CRUD Keranjang Belanja
+Route::get('/keranjangbelanja','BelanjaController@index');
+Route::get('/keranjangbelanja/add','BelanjaController@add');
+Route::post('/keranjangbelanja/store','BelanjaController@store');
+Route::get('/keranjangbelanja/hapus/{id}','BelanjaController@hapus');

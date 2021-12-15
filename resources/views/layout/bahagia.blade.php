@@ -67,6 +67,10 @@
                         <li class="nav-item">
                             <a class="btn btn-default" href = "/bagian" >Praktikum</a>
                         </li>
+                        <br>
+                        <li class="nav-item">
+                            <a class="btn btn-default" href = "/keranjangbelanja" >EAS </a>
+                        </li>
 
                         <br>
                     </ul>
